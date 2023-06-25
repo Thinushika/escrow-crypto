@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: #fff !important;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+input,
+label,
+button,
+ul,
+li,
+a,
+select,
+option {
+  font-family: "Inter", sans-serif !important;
+}
+p, label, a, input, option, ul, li, button{
+  font-size: 14px !important;
+  font-weight: 300;
+}
+
+
+
+
+/* sign in */
+.layout-full {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden !important;
+}
+
+.bg-sign-in {
+  background: url("/img/elements/pagelogin_background.png") no-repeat center;
+  background-size: cover;
+  width: 70vw;
+  height: 85vh;
+  border-radius: 8px;
+}
+
+.sign-in-form input{
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 6px;
+  height: 40px;
+  color: #fff;
+  outline: none !important;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+.sign-in-form button{
+  right: 0;
+  font-weight: 900;
+  height: 20px;
+  width: 20px;
+  line-height: 10px;
+  border-radius: 100%;
+  padding: 0px !important;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+.with-border{
+  border-color: #fff;
+}
+.without-border{
+  border-color: transparent !important;
+}
+.sign-in-form i{
+  line-height: 15px !important;
+  font-size: 15px !important;
+}
+.sign-in-form button:hover, 
+.sign-in-form button:focus, 
+.sign-in-form button:active, 
+.sign-in-form button::selection
+.sign-in-form input:hover, 
+.sign-in-form input:focus, 
+.sign-in-form input:active, 
+.sign-in-form input::selection{
+  outline: none !important;
+  background-color: rgba(82, 174, 255, 0.534);
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff94;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff94;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff94;
+}
+.remember-me, .remember-me input{
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: transparent !important;
+}
+.forgot-pw{
+  color: #42E8E0;
+  text-decoration: none;
+}
+.sign-in{
+  width: 100% !important;
+  height: 40px !important;
+  background-color: #42E8E0;
+  border: solid 1px #42E8E0;
+  color: #3C3C3C !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: background-color 0.5s ease-in;
+}
+.sign-in:hover{
+  background-color: transparent !important;
+  color: #42E8E0 !important;
+}
+.sign-in-google{
+  width: 100% !important;
+  height: 40px !important;
+  background-color: transparent;
+  border: solid 1px #fff;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 300 !important;
+  transition: background-color 0.5s ease-in;
+}
+
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  .bg-sign-in{
+    width: 100vw;
+    height: 100vh;
+    border-radius:  0px;
+  }
+}
