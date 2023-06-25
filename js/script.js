@@ -22,9 +22,9 @@ var togglePasswordButton = document.getElementById("togglePassword");
 togglePasswordButton.addEventListener("click", function () {
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        togglePasswordButton.innerHTML = '<i class="bi bi-eye-slash"></i>';
+        togglePasswordButton.innerHTML = '<i class="bi bi-eye"></i>';
     } else {
         passwordInput.type = "password";
-        togglePasswordButton.innerHTML = '<i class="bi bi-eye"></i>';
+        togglePasswordButton.innerHTML = '<i class="bi bi-eye-slash"></i>';
     }
 });
