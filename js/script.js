@@ -28,3 +28,9 @@ togglePasswordButton.addEventListener("click", function () {
         togglePasswordButton.innerHTML = '<i class="bi bi-eye-slash"></i>';
     }
 });
+
+
+// Toggle the sidebar
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("show");
+  }
