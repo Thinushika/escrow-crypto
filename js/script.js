@@ -34,3 +34,11 @@ togglePasswordButton.addEventListener("click", function () {
 function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("show");
   }
+
+
+
+//   badge color
+
+
+
+

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: radial-gradient(297.71% 161.43% at 3.47% 8.73%, #192557 0%, #0B0F32 22.71%, #040013 47.19%, #030730 65.21%, #090C2B 82.41%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Exo', sans-serif;
+}
+
+p,
+label,
+select,
+a,
+input,
+option,
+ul,
+li,
+button,
+span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
+/* nav bar */
+.nav-link {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.802px;
+    transition: text-decoration-thickness 0.7s ease-in !important;
+    text-decoration-color: #15BFFD !important;
+}
+
+.nav-link:hover {
+    color: #fff;
+    text-decoration: underline !important;
+    text-decoration-color: #15BFFD !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 5px !important;
+}
+
+.btn-sign-up {
+    color: #2AF6FF;
+    font-size: 16px;
+    font-family: Exo;
+    font-weight: 700;
+    letter-spacing: 0.802px;
+    text-decoration-line: underline;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-sign-in {
+    color: #180D5B;
+    font-size: 18px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.17px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    background: #42E8E0;
+    border: none;
+}
