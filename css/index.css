@@ -104,13 +104,19 @@ a {
 
 
 
+
+
+
+
+
+
 /* hero section */
 .hero-bg {
     background-image: url('../img/elements/bg.png');
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 95vh;
+    background-size: contain;
+    min-height: 100vh;
 }
 
 .hero-title {
@@ -159,23 +165,28 @@ a {
     color: #fff;
     background: #15bffd93;
 }
-.zindex-front{
+
+.zindex-front {
     width: 75%;
     position: relative;
     z-index: 9;
 }
-.escrow-bg-text{
+
+.escrow-bg-text {
     z-index: 1;
 }
-.escrow-bg-text img{
+
+.escrow-bg-text img {
     width: 65%;
     margin-top: -20%;
 }
-@media screen and (max-width: 992px){
-    .escrow-bg-text img{
+
+@media screen and (max-width: 992px) {
+    .escrow-bg-text img {
         width: 65%;
         margin-top: -35%;
     }
+
     .hero-bg {
         min-height: 60vh;
     }
@@ -185,14 +196,93 @@ a {
     .hero-bg {
         min-height: 80vh;
     }
-    .zindex-front{
+
+    .zindex-front {
         width: 100%;
     }
+
     .hero-title {
         font-size: 2em;
     }
-    .escrow-bg-text img{
+
+    .escrow-bg-text img {
         width: 85%;
         margin-top: -90%;
+    }
+}
+
+
+
+
+
+/* market */
+.market-summery h2 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.line-1 {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(270deg, rgba(21, 191, 253, 0.00) 0%, #15BFFD 24.52%, #15BFFD 50.74%, #15BFFD 83.89%, rgba(21, 191, 253, 0.00) 100%);
+}
+
+.v-line-1 {
+    width: 2px;
+    height: 150px;
+    background-image: url('../img/elements/Line 10.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.coin-box {
+    width: 100px;
+    height: 100px;
+}
+
+.owl-carousel p {
+    color: #FFF;
+    font-family: Exo;
+    font-size: 19.79px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24.737px;
+}
+
+.red-batch {
+    color: #E20000;
+}
+
+.blue-batch {
+    color: #00E2D7;
+}
+
+.owl-carousel span {
+    font-family: Exo;
+    font-size: 19.79px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24.737px;
+}
+.corowsel-container{
+    width: 90%;
+}
+.market-summery a {
+    color: #FFF;
+    font-size: 22px !important;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Exo', sans-serif !important;
+}
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 600px) {
+    .v-line-1{
+        display: none;
+    }
+    .corowsel-container{
+        width: 100%;
     }
 }
