@@ -41,7 +41,7 @@ p, label, a, input, option, ul, li, button{
 }
 
 .bg-sign-in {
-  background: url("/img/elements/pagelogin_background.png") no-repeat center;
+  background: url("../img/elements/pagelogin_background.png") no-repeat center;
   background-size: cover;
   width: 70vw;
   height: 85vh;
