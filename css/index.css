@@ -459,6 +459,15 @@ a {
     height: 2px;
     background: linear-gradient(71deg, #15BFFD 0%, rgba(118, 47, 254, 0.68) 100%);
 }
+.img-right{
+    right: 0 !important;
+}
+.benifit_sec{
+    background-image: url('../img/elements/benifi_coin_bg.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 @media screen and (max-width: 992px) {
     .h_line{
         width: 100%;
