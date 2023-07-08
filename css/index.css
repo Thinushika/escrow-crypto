@@ -332,20 +332,26 @@ a {
     .text_box {
         width: 90%;
     }
-    .abt_para{
+
+    .abt_para {
         width: 95%;
     }
 }
+
 @media screen and (max-width: 992px) {
-    .text_box,.abt_para{
+
+    .text_box,
+    .abt_para {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 540px) {
     .about {
         min-height: 100vh;
     }
-    .padding-540{
+
+    .padding-540 {
         padding-left: 10px;
     }
 }
@@ -374,39 +380,43 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img_swap{
-    width:80%;
+
+.img_swap {
+    width: 80%;
 }
-.crypto_swapping ul{
+
+.crypto_swapping ul {
     list-style: none;
     width: max-content;
 }
-.crypto_swapping ul li{
+
+.crypto_swapping ul li {
     width: max-content;
 }
-.absolute-z-1{
+
+.absolute-z-1 {
     z-index: 1;
 }
-.absolute-z-2{
+
+.absolute-z-2 {
     z-index: 2;
 }
-.absolute-z-3{
+
+.absolute-z-3 {
     z-index: 3;
 }
-@media screen and (max-width: 1024px) {
 
-}
-@media screen and (max-width: 992px) {
-}
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {}
+
 @media screen and (max-width: 540px) {
     .crypto_swapping {
         min-height: 100vh;
     }
 }
 
-@media screen and (max-width: 500px) {
-    
-}
+@media screen and (max-width: 500px) {}
 
 
 
@@ -419,6 +429,7 @@ a {
     letter-spacing: 2.576px;
     text-transform: capitalize;
 }
+
 .title_h3 {
     color: #D9D9D9;
     text-shadow: 0px 3.435014486312866px 3.435014486312866px 0px rgba(0, 0, 0, 0.25);
@@ -427,6 +438,7 @@ a {
     letter-spacing: 2.576px;
     text-transform: capitalize;
 }
+
 .para {
     width: 75%;
     color: #eaeaeab9;
@@ -450,35 +462,84 @@ a {
     background: #15BFFD;
     border: 2px solid #15BFFD;
 }
+
 .color_btn:hover {
     color: #15BFFD;
     background: transparent;
 }
-.h_line{
+
+.h_line {
     width: 60%;
     height: 2px;
     background: linear-gradient(71deg, #15BFFD 0%, rgba(118, 47, 254, 0.68) 100%);
 }
-.img-right{
+
+.img-right {
     right: 0 !important;
 }
-.benifit_sec{
+
+.benifit_sec {
     background-image: url('../img/elements/benifi_coin_bg.png');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.img_milestone {
+    width: auto;
+    height: 450px;
+}
+
 @media screen and (max-width: 992px) {
-    .h_line{
+    .h_line {
         width: 100%;
     }
+
     .para {
         width: 100%;
     }
+
     .title_h2 {
         font-size: 38px;
     }
+
     .title_h3 {
         font-size: 28px;
     }
+}
+
+
+
+
+
+
+
+/* footer */
+.footer_bg {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(5px);
+}
+
+.footer h4 {
+    color: #FFF;
+    font-family: Exo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.footer a {
+    color: #FFF;
+    font-family: Exo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+.img-nav-footer{
+    width: 150px;
+    height: auto;
 }
