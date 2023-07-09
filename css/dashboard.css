@@ -298,35 +298,103 @@ button {
   font-size: 12px;
   font-weight: 400;
 }
-.time-text{
+
+.time-text {
   color: #C6C6CD;
-font-family: Futura Md BT;
-font-size: 10px !important;
-font-weight: 400;
+  font-family: Futura Md BT;
+  font-size: 10px !important;
+  font-weight: 400;
 }
 
-.chat-input{
+.chat-input {
   border-radius: 4.784px;
   border: 0.478px solid #08F0FF;
   background: rgba(8, 240, 255, 0.08);
   width: 100%;
 }
-.chat-input input{
-background-color: transparent;
-border: none;
-width: 100%;
-color: #fff;
-font-family: Futura Md BT;
-font-size: 14px;
-font-weight: 400;
+
+.chat-input input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-family: Futura Md BT;
+  font-size: 14px;
+  font-weight: 400;
 }
-.chat-input button{
+
+.chat-input button {
   background-color: transparent;
   border: none;
 }
-.chat-input input::placeholder{
+
+.chat-input input::placeholder {
   color: #9EADB7;
 }
-.send-icon{
-color: #08F0FF;
+
+.send-icon {
+  color: #08F0FF;
+}
+
+.coin-box-title {
+  color: #FFF;
+  font-family: Futura Md BT;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.icon-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #25F2FF;
+  text-align: center;
+}
+.icon-circle i {
+  font-size: 14px;
+}
+.icon-circle-red {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #FF2525;
+  text-align: center;
+}
+.icon-circle-red i {
+  font-size: 14px;
+}
+
+
+.price-span {
+  border-radius: 19.545px;
+  background: rgba(8, 240, 255, 0.08);
+  color: #25F2FF;
+  font-family: Futura Md BT;
+  font-size: 9px !important;
+  font-weight: 400;
+  height: max-content;
+}
+.price-span-red {
+  border-radius: 19.545px;
+background: rgba(253, 104, 104, 0.16);
+  color: #FF2525;
+  font-family: Futura Md BT;
+  font-size: 9px !important;
+  font-weight: 400;
+  height: max-content;
+}
+
+.price-p {
+  color: #FFF !important;
+  font-family: Futura Md BT;
+  font-size: 18.338px;
+  font-weight: 700;
+}
+
+
+.box-total-red {
+  border-radius: 11.894px;
+  border: 0.764px solid #FF2525;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(4.672735214233398px);
 }
