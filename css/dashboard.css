@@ -398,3 +398,63 @@ background: rgba(253, 104, 104, 0.16);
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(4.672735214233398px);
 }
+
+
+
+
+/* canvas */
+canvas {
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.chart-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.chart-marker {
+  position: absolute;
+  pointer-events: none;
+  background-color: #007BFF;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.chrt-title{
+  color: #FFF;
+font-family: Futura Md BT;
+font-size: 18px !important;
+font-weight: 400;
+letter-spacing: 2.204px;
+}
+.chrt-btn{
+border: none;
+background-color: transparent;
+color: #fff;
+font-family: Futura Md BT;
+font-size: 12px !important;
+font-weight: 400;
+letter-spacing: 1.714px;
+}
+.chrt-btn-active{
+  border: none;
+  border-radius: 3.656px;
+background: linear-gradient(90deg, #3AD6D4 0%, #36A7EF 100%);
+box-shadow: 0.9363465905189514px 4.681733131408691px 16.854238510131836px 0px rgba(58, 213, 212, 0.37);
+color: #0D314B;
+font-family: Futura Md BT;
+font-size: 12px !important;
+font-weight: 400;
+letter-spacing: 1.714px;
+}
+.calander-icon{
+  color: #25F2FF;
+  font-size: 17px !important;
+}
+.graph-container{
+  height: 370px;
+  width: 100%;
+}

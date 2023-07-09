@@ -24,7 +24,7 @@
   <!-- Customized Bootstrap Stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <!-- Template Stylesheet -->
   <link href="css/dashboard.css" rel="stylesheet" />
@@ -171,7 +171,27 @@
           <!-- chart -->
           <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center pe-2">
             <div class="d-flex w-100 box-total d-flex flex-column justify-content-center align-items-center ">
-              <h1>chart</h1>
+              <div class="d-flex flex-row justify-content-between w-100 px-2 pt-2 pb-0">
+                <p class="chrt-title">Market Overview</p>
+                <p class="chrt-title">Bitcoin USD (BTC-USD)</p>
+              </div>
+              <div class="d-flex flex-row justify-content-between w-100 px-2">
+                <div class="d-flex flex-row">
+                  <button class="chrt-btn-active">Summary</button>
+                  <button class="chrt-btn">Chart</button>
+                </div>
+                <div class="d-flex flex-row">
+                  <button class="chrt-btn-active">1D</button>
+                  <button class="chrt-btn">7D</button>
+                  <button class="chrt-btn">1M</button>
+                  <button class="chrt-btn">3M</button>
+                  <button class="chrt-btn">ALL</button>
+                  <i class="bi bi-calendar-fill calander-icon"></i>
+                </div>
+              </div>
+              <div class="d-flex graph-container p-2">
+                <canvas id="lineGraph"></canvas>
+              </div>
             </div>
           </div>
 
@@ -219,11 +239,12 @@
                 class="d-flex w-100 box-total d-flex flex-column justify-content-center align-items-center mb-2 me-2">
                 <div class="d-flex flex-row p-2 w-100 justify-content-between">
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <img src="./img/elements/btc.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;" class="me-2">
+                    <img src="./img/elements/btc.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;"
+                      class="me-2">
                     <p class="coin-box-title mb-0">BTC/USDT</p>
                   </div>
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <i class="bi bi-three-dots-vertical text-white"></i> 
+                    <i class="bi bi-three-dots-vertical text-white"></i>
                   </div>
                 </div>
                 <div class="d-flex flex-row p-2 w-100 justify-content-between align-items-center">
@@ -235,7 +256,9 @@
                   </div>
                   <div class="col-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" viewBox="0 0 77 47" fill="none">
-                      <path d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605" stroke="#25F2FF" stroke-width="2.44508"/>
+                      <path
+                        d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605"
+                        stroke="#25F2FF" stroke-width="2.44508" />
                     </svg>
                   </div>
                 </div>
@@ -247,11 +270,12 @@
               <div class="d-flex w-100 box-total d-flex flex-column justify-content-center align-items-center me-2">
                 <div class="d-flex flex-row p-2 w-100 justify-content-between">
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <img src="./img/elements/eth.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;" class="me-2">
+                    <img src="./img/elements/eth.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;"
+                      class="me-2">
                     <p class="coin-box-title mb-0">ETH/USDT</p>
                   </div>
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <i class="bi bi-three-dots-vertical text-white"></i> 
+                    <i class="bi bi-three-dots-vertical text-white"></i>
                   </div>
                 </div>
                 <div class="d-flex flex-row p-2 w-100 justify-content-between align-items-center">
@@ -263,7 +287,9 @@
                   </div>
                   <div class="col-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" viewBox="0 0 77 47" fill="none">
-                      <path d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605" stroke="#25F2FF" stroke-width="2.44508"/>
+                      <path
+                        d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605"
+                        stroke="#25F2FF" stroke-width="2.44508" />
                     </svg>
                   </div>
                 </div>
@@ -274,14 +300,16 @@
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
               <!-- box 3 -->
-              <div class="d-flex w-100 box-total-red d-flex flex-column justify-content-center align-items-center mb-2 ">
+              <div
+                class="d-flex w-100 box-total-red d-flex flex-column justify-content-center align-items-center mb-2 ">
                 <div class="d-flex flex-row p-2 w-100 justify-content-between">
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <img src="./img/elements/usdt.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;" class="me-2">
+                    <img src="./img/elements/usdt.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;"
+                      class="me-2">
                     <p class="coin-box-title mb-0 text-uppercase">Usdt</p>
                   </div>
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <i class="bi bi-three-dots-vertical text-white"></i> 
+                    <i class="bi bi-three-dots-vertical text-white"></i>
                   </div>
                 </div>
                 <div class="d-flex flex-row p-2 w-100 justify-content-between align-items-center">
@@ -293,7 +321,9 @@
                   </div>
                   <div class="col-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" viewBox="0 0 87 55" fill="none">
-                      <path d="M2.04602 54.1159C2.04602 54.1159 3.29826 50.0015 4.70014 43.9631C5.62789 39.9669 6.55587 35.671 9.6483 32.9753C13.344 29.7537 18.2011 29.6737 23.5198 33.4413C25.2096 34.6384 26.426 36.3614 27.7967 37.9138C31.4117 42.008 37.3306 44.1884 43.8767 28.3861C44.7031 26.3911 45.2212 24.2712 45.6267 22.1503C46.9863 15.0396 49.7984 5.52635 58.5207 10.6343C63.3913 13.4866 66.9283 21.2682 72.0042 18.7995C75.376 17.1596 79.8031 12.0976 85.1786 0.629883" stroke="#FF2525" stroke-width="2.44508"/>
+                      <path
+                        d="M2.04602 54.1159C2.04602 54.1159 3.29826 50.0015 4.70014 43.9631C5.62789 39.9669 6.55587 35.671 9.6483 32.9753C13.344 29.7537 18.2011 29.6737 23.5198 33.4413C25.2096 34.6384 26.426 36.3614 27.7967 37.9138C31.4117 42.008 37.3306 44.1884 43.8767 28.3861C44.7031 26.3911 45.2212 24.2712 45.6267 22.1503C46.9863 15.0396 49.7984 5.52635 58.5207 10.6343C63.3913 13.4866 66.9283 21.2682 72.0042 18.7995C75.376 17.1596 79.8031 12.0976 85.1786 0.629883"
+                        stroke="#FF2525" stroke-width="2.44508" />
                     </svg>
                   </div>
                 </div>
@@ -305,11 +335,12 @@
               <div class="d-flex w-100 box-total d-flex flex-column justify-content-center align-items-center ">
                 <div class="d-flex flex-row p-2 w-100 justify-content-between">
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <img src="./img/elements/ltc.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;" class="me-2">
+                    <img src="./img/elements/ltc.png" alt="" style="width: 30px; height: 30px; border-radius: 100%;"
+                      class="me-2">
                     <p class="coin-box-title mb-0">LTC/USDT</p>
                   </div>
                   <div class="d-flex flex-row justify-content-center align-items-center">
-                    <i class="bi bi-three-dots-vertical text-white"></i> 
+                    <i class="bi bi-three-dots-vertical text-white"></i>
                   </div>
                 </div>
                 <div class="d-flex flex-row p-2 w-100 justify-content-between align-items-center">
@@ -321,7 +352,9 @@
                   </div>
                   <div class="col-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" viewBox="0 0 77 47" fill="none">
-                      <path d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605" stroke="#25F2FF" stroke-width="2.44508"/>
+                      <path
+                        d="M1.6062 43.4568C4.37637 46.2513 9.08566 48.487 16.5651 30.0432C20.3114 22.4849 26.7596 20.378 34.0828 25.5657C35.7726 26.7627 36.989 28.4858 38.3597 30.0381C41.9746 34.1324 47.8935 36.3128 54.4397 20.5104C55.2661 18.5155 55.7842 16.3955 56.1897 14.2746C57.8414 5.63594 61.637 -6.54882 75.5697 8.24605"
+                        stroke="#25F2FF" stroke-width="2.44508" />
                     </svg>
                   </div>
                 </div>
@@ -385,7 +418,8 @@
                 </div>
               </div>
               <!-- message input -->
-              <div class="d-flex flex-row justify-content-center align-items-center position-relative chat-input  px-2 py-2">
+              <div
+                class="d-flex flex-row justify-content-center align-items-center position-relative chat-input  px-2 py-2">
                 <input type="text" placeholder="Let's chat" class="mb-0">
                 <button class="d-flex justify-content-center align-items-center">
                   <i class="bi bi-send send-icon mb-0"></i>
@@ -500,8 +534,81 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/script.js"></script>
 
-  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var ctx = document.getElementById('lineGraph').getContext('2d');
+
+      // Define your data
+      var data = {
+        labels: ['08:05 PM', '08:10 PM', '08:15 PM', '08:20 PM', '08:25 PM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM'],
+        datasets: [{
+          label: 'Stock Prices',
+          data: [26.31, 28.21, 30.42, 34.55, 54.55, 42.26, 26.31, 28.21, 30.42, 34.55, 54.55, 42.26, 26.31, 28.21, 30.42],
+          borderColor: '#007BFF',
+          backgroundColor: 'transparent',
+          pointBackgroundColor: '#007BFF',
+          pointRadius: 1,
+          pointHoverRadius: 5,
+          borderWidth: 1
+        }]
+      };
+
+      // Create the line graph
+      var lineGraph = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            yAxes: [{
+              ticks: {
+                callback: function (value, index, values) {
+                  return '$' + value;
+                }
+              }
+            }]
+          },
+          tooltips: {
+            enabled: false
+          },
+          legend: {
+            display: false
+          }
+        }
+      });
+
+      // Add marker functionality
+      var chartContainer = document.querySelector('.chart-container');
+      var chartMarker = document.createElement('div');
+      chartMarker.classList.add('chart-marker');
+      chartContainer.appendChild(chartMarker);
+
+      var chartArea = chartContainer.getBoundingClientRect();
+
+      chartContainer.addEventListener('mousemove', function (e) {
+        var mouseX = e.clientX - chartArea.left;
+        var mouseY = e.clientY - chartArea.top;
+
+        var activePoint = lineGraph.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true)[0];
+
+        if (activePoint) {
+          var xPos = activePoint.tooltipPosition().x + chartArea.left;
+          var yPos = activePoint.tooltipPosition().y + chartArea.top;
+
+          chartMarker.style.left = xPos + 'px';
+          chartMarker.style.top = yPos + 'px';
+          chartMarker.innerText = '$' + activePoint.yLabel;
+          chartMarker.style.display = 'block';
+        } else {
+          chartMarker.style.display = 'none';
+        }
+      });
+    });
+  </script>
   <!-- scripts end -->
 </body>
 
