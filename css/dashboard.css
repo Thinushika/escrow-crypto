@@ -44,11 +44,15 @@ button {
   height: 100vh;
   background: linear-gradient(133deg, #000234 0%, #141337 46.86%, #000313 93.78%);
 }
-.dashboard-inner{
+
+.dashboard-inner {
   height: 100vh;
   overflow-y: auto;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #021f68 #39a6ffb4; /* For Firefox */
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #021f68 #39a6ffb4;
+
+  /* For Firefox */
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -225,7 +229,7 @@ button {
 }
 
 
-.coin-text p{
+.coin-text p {
   color: #FFF;
   font-size: 14.365px !important;
   width: max-content;
@@ -233,23 +237,26 @@ button {
   font-weight: 700;
   line-height: normal;
 }
-.coin-text span{
+
+.coin-text span {
   color: #ffffffb6;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.coin-text-cu p{
-width: max-content;
-color: #25F2FF;
-font-size: 14.365px;
-font-family: Futura Md BT;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+.coin-text-cu p {
+  width: max-content;
+  color: #25F2FF;
+  font-size: 14.365px;
+  font-family: Futura Md BT;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.coin-text-cu span{
+
+.coin-text-cu span {
   color: #FFF;
   font-size: 14.365px;
   font-family: Futura Md BT;
@@ -258,6 +265,7 @@ line-height: normal;
   line-height: normal;
   opacity: 0.699999988079071;
 }
+
 @media (max-width: 991.98px) {
   .sidebar {
     margin-left: -250px;
@@ -266,4 +274,59 @@ line-height: normal;
   .sidebar.show {
     margin-left: 0;
   }
+}
+
+
+.chat-title {
+  color: #FFF;
+  font-family: Futura Md BT;
+  font-size: 22px !important;
+  font-weight: 400;
+  letter-spacing: 2.252px;
+}
+
+.chat-h4-title {
+  color: #FFF;
+  font-family: Futura Md BT;
+  font-size: 15px !important;
+  font-weight: 400;
+}
+
+.chat-message {
+  color: #FFF;
+  font-family: Futura Md BT;
+  font-size: 12px;
+  font-weight: 400;
+}
+.time-text{
+  color: #C6C6CD;
+font-family: Futura Md BT;
+font-size: 10px !important;
+font-weight: 400;
+}
+
+.chat-input{
+  border-radius: 4.784px;
+  border: 0.478px solid #08F0FF;
+  background: rgba(8, 240, 255, 0.08);
+  width: 100%;
+}
+.chat-input input{
+background-color: transparent;
+border: none;
+width: 100%;
+color: #fff;
+font-family: Futura Md BT;
+font-size: 14px;
+font-weight: 400;
+}
+.chat-input button{
+  background-color: transparent;
+  border: none;
+}
+.chat-input input::placeholder{
+  color: #9EADB7;
+}
+.send-icon{
+color: #08F0FF;
 }
