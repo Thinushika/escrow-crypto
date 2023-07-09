@@ -374,6 +374,12 @@ a {
 
 
 /* crypto_swapping */
+.service_bg{
+    background-image: url('../img/elements/service_bg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .crypto_swapping {
     /* background-image: url('../img/elements/market_bg.png'); */
     background-position: center;
@@ -423,8 +429,34 @@ a {
 
 
 
+/* benifit */
+
+.benifit_sec {
+    /* background-image: url('../img/elements/benifi_coin_bg.png'); */
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+.img_milestone {
+    width: auto;
+    height: 450px;
+}
+@media screen and (max-width: 992px){
+    .benifit_sec{
+        height: auto;
+    }
+}
+
 
 /* protection */
+.protection_sec {
+    background-image: url('../img/elements/protection_bg.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .protection_text_box{
     border-radius: 8px;
 background: rgba(255, 255, 255, 0.05);
@@ -439,7 +471,20 @@ border: solid 1px #2b11d3;
     line-height: normal;
     letter-spacing: -0.4px;
 }
-  
+.box-1{
+    width: 400px;
+    left: 0;
+    top: 170px;
+}
+.box-2{
+    width: 400px;
+    top: 400px;
+}
+.box-3{
+    width: 400px;
+    right: 0;
+    top: 170px;
+}
 
 
 
@@ -503,17 +548,6 @@ border: solid 1px #2b11d3;
     right: 0 !important;
 }
 
-.benifit_sec {
-    background-image: url('../img/elements/benifi_coin_bg.png');
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.img_milestone {
-    width: auto;
-    height: 450px;
-}
 
 @media screen and (max-width: 992px) {
     .h_line {
